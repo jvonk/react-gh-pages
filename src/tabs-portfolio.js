@@ -1,15 +1,19 @@
 import React from 'react';
-import {Tabs, Tab} from 'material-ui/Tabs';
+import { Tabs, Tab } from 'material-ui/Tabs';
 import SwipeableViews from 'react-swipeable-views';
 import React, { Component } from 'react';
 import { render } from 'react-dom';
 import Hello from './Hello';
-import './style.css';
+import './App.css';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import MyAwesomeReactComponent from './MyAwesomeReactComponent';
 import AppBarExampleIcon from './appbar';
-import OverviewCard from './about me/overviewcard';
-import ArtCard from './project cards/artcard';
+import ArtCards from './portfolio/art';
+import ScienceCards from './portfolio/science';
+import MathCards from './portfolio/math';
+import SoftwareCards from './portfolio/software';
+import MusicCards from './portfolio/music';
+import OverviewCard from './portfolio/overview';
 import Tab from './tabs';
 import Paper from 'material-ui/Paper';
 import Link from './links';
@@ -25,13 +29,14 @@ const styles = {
     fontWeight: 400,
   },
   slide: {
-    padding: 10,
+    padding: 5,
   },
   paper: {
-  height: 5,
-  margin: 20,
-  textAlign: 'center',
-  display: 'inline-block',},
+    height: 5,
+    margin: 20,
+    textAlign: 'center',
+    display: 'inline-block',
+  },
 };
 
 
@@ -56,23 +61,37 @@ export default class TabsExampleSwipeable extends React.Component {
           onChange={this.handleChange}
           value={this.state.slideIndex}
         >
-          <Tab label="About Me" value={0} />
-          <Tab label="Links" value={1} />
+          <Tab label="Overview" value={0} />
+          <Tab label="Art" value={1} />
+          <Tab label="Science" value={2} />
+          <Tab label="Software" value={3} />
+          <Tab label="Applied math" value={4} />
+          <Tab label="Music" value={5} />
         </Tabs>
         <SwipeableViews
           index={this.state.slideIndex}
           onChangeIndex={this.handleChange}
         >
-          
           <div>
             <OverviewCard />
-            <Paper style={styles.paper} zDepth={3} />
           </div>
           <div style={styles.slide}>
-            <Link/>
+            <ArtCards />
+          </div>
+          <div style={styles.slide}>
+            <ScienceCards />
+          </div>
+          <div style={styles.slide}>
+            <SoftwareCards />
+          </div>
+          <div style={styles.slide}>
+            <MathCards />
+          </div>
+          <div style={styles.slide}>
+            <MusicCards />
           </div>
         </SwipeableViews>
-        
+
       </div>
     );
   }

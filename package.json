@@ -1,30 +1,32 @@
 {
-  "name": "react-gh-pages",
+  "name": "matterdark.github.io",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://matterdark.github.io/matterdark.github.io",
   "dependencies": {
-    "react": "^16.6.3",
-    "react-dom": "^16.6.3",
-    "react-scripts": "2.1.1",
     "links": "0.3.0",
+    "react": "^16.6.3",
     "redux": "3.7.2",
-    "prop-types": "15.6.0",
-    "material-ui": "0.19.2",
+    "react-dom": "16.6.3",
+    "prop-types": "15.6.2",
+    "material-ui": "0.20.2",
     "react-redux": "5.0.6",
-    "react-router-dom": "4.2.2",
+    "react-scripts": "2.1.1",
+    "react-router-dom": "4.3.1",
     "redux-responsive": "4.3.2",
-    "react-swipeable-views": "0.12.8",
+    "react-swipeable-views": "0.13.0",
     "material-ui-scrollable-tabs": "1.0.0",
     "material-ui-responsive-drawer": "1.19.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "devDependencies": {
+    "react-scripts": "latest",
+    "gh-pages": "^1.0.0"
   },
   "browserslist": [
     ">0.2%",

@@ -1,11 +1,11 @@
 import React from 'react';
-import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card';
+import { Card, CardActions, CardHeader, CardMedia, CardTitle, CardText } from 'material-ui/Card';
 import FlatButton from 'material-ui/FlatButton';
 import Paper from 'material-ui/Paper';
 const style1 = {
-  controls:"controls",
-  onmouseover:"this.play()",
-  onmouseout:"this.pause()",
+  controls: "controls",
+  onmouseover: "this.play()",
+  onmouseout: "this.pause()",
 };
 const style = {
   height: 5,
@@ -19,7 +19,7 @@ const CardExampleWithAvatar = () => (
       <CardHeader
         title="Overview"
         avatar="https://lh3.googleusercontent.com/-jObxYwpKyBY/WIahpi_PmjI/AAAAAAAAABA/oUR7992MJtA6ac3X_SC7z5gdRpfV6pIzACEwYBhgL/w280-h278-p/oie_oie_overlay%2B%25282%2529.gif"
-        />
+      />
       <CardText>
         I have enjoyed a great many hours in a pursuit of science. My ambition is to solve real problems using math and science. <a href="https://coertvonk.com/family/school/johan/math-science-17331">See more</a>.
       </CardText>
@@ -28,7 +28,7 @@ const CardExampleWithAvatar = () => (
     <Card>
       <CardHeader
         title="Flight inquiry"
-        subtitle="2010"/>
+        subtitle="2010" />
       />
       <CardText>
         Inquiry into flight. Video presentation from our school project. <a href="https://coertvonk.com/family/school/flight-inquiry-2834">See more</a>.
@@ -38,7 +38,7 @@ const CardExampleWithAvatar = () => (
     <Card>
       <CardHeader
         title="Land veroverd op de zee"
-        subtitle="2011"/>
+        subtitle="2011" />
       />
       <CardText>
         How the Dutch make land from water. Filmed on location in the Netherlands. <a href="https://coertvonk.com/family/school/flight-inquiry-2834">See more</a>.
@@ -46,16 +46,16 @@ const CardExampleWithAvatar = () => (
     </Card>
 
     <Paper style={style} zDepth={3} />
-    
+
     <Card initiallyExpanded>
       <CardHeader
         title="Lectures by Walter Lewin (MIT)"
         actAsExpander={true}
-        showExpandableButton={true}/>
+        showExpandableButton={true} />
       />
       <CardMedia expandable={true}>
-        <img 
-          src= "https://coertvonk.com/wp-content/uploads/walterlewin.jpg" />
+        <img
+          src="https://coertvonk.com/wp-content/uploads/walterlewin.jpg" />
       </CardMedia>
       <CardText>
         <a href="https://www.youtube.com/channel/UCiEHVhv0SBMpP75JbzJShqw">See more</a>.
@@ -63,7 +63,7 @@ const CardExampleWithAvatar = () => (
     </Card>
 
     <Paper style={style} zDepth={3} />
-    
+
     <Card initiallyExpanded>
       <CardHeader
         title="NOVA, TED Talks"
@@ -71,7 +71,7 @@ const CardExampleWithAvatar = () => (
     </Card>
 
     <Paper style={style} zDepth={3} />
-    
+
     <Card initiallyExpanded>
       <CardHeader
         title="Stanford Splash"
@@ -82,16 +82,16 @@ const CardExampleWithAvatar = () => (
     </Card>
 
     <Paper style={style} zDepth={3} />
-    
+
     <Card initiallyExpanded>
       <CardHeader
         title="Flour, yeast, water and salt makes bread"
         actAsExpander={true}
-        showExpandableButton={true}/>
+        showExpandableButton={true} />
       />
       <CardMedia expandable={true}>
-        <img 
-          src= "https://coertvonk.com/wp-content/uploads/school-bread.jpg" />
+        <img
+          src="https://coertvonk.com/wp-content/uploads/school-bread.jpg" />
       </CardMedia>
       <CardText>
         Baking bread is an experiment in biochemistry. The fermentation makes the bread chewy, fluffy and tasty. <a href="https://coertvonk.com/technology/inquiries/yeast-in-bread-6043">See more</a>.
@@ -99,12 +99,12 @@ const CardExampleWithAvatar = () => (
     </Card>
 
     <Paper style={style} zDepth={3} />
-    
+
     <Card initiallyExpanded>
       <CardHeader
         title="How do computers do math?"
         actAsExpander={true}
-        showExpandableButton={true}/>
+        showExpandableButton={true} />
       />
       <CardMedia expandable={true}>
         <img width="100% !important" src="https://coertvonk.com/wp-content/uploads/math-logo-theory.svg" />
@@ -115,16 +115,16 @@ const CardExampleWithAvatar = () => (
     </Card>
 
     <Paper style={style} zDepth={3} />
-    
+
     <Card initiallyExpanded>
       <CardHeader
         title="How do microprocessors work?"
         subtitle="2011"
         actAsExpander={true}
-        showExpandableButton={true}/>
+        showExpandableButton={true} />
       />
       <CardMedia expandable={true}>
-        <img 
+        <img
           src="https://coertvonk.com/wp-content/uploads/school-microprocessor.png" />
       </CardMedia>
       <CardText>
@@ -133,16 +133,16 @@ const CardExampleWithAvatar = () => (
     </Card>
 
     <Paper style={style} zDepth={3} />
-    
+
     <Card initiallyExpanded>
       <CardHeader
         title="Electromagnetism Inquiry"
         subtitle="2012"
         actAsExpander={true}
-        showExpandableButton={true}/>
+        showExpandableButton={true} />
       />
       <CardMedia expandable={true}>
-        <img src= "https://coertvonk.com/wp-content/uploads/school-magnets.png" />
+        <img src="https://coertvonk.com/wp-content/uploads/school-magnets.png" />
       </CardMedia>
       <CardText>
         Starting from electrons spinning around their axis to electromagnetic fields. <a href="https://coertvonk.com/technology/embedded/arduino-webserver-using-jquerymobile-and-jsfiddle-11803">See more</a>.
@@ -150,17 +150,17 @@ const CardExampleWithAvatar = () => (
     </Card>
 
     <Paper style={style} zDepth={3} />
-    
+
     <Card initiallyExpanded>
       <CardHeader
         title="Web browser accessing Arduino data"
         subtitle="2015"
         actAsExpander={true}
-        showExpandableButton={true}/>
+        showExpandableButton={true} />
       />
       <CardMedia expandable={true}>
-        <img 
-          src= "https://coertvonk.com/wp-content/uploads/RGB-LED_bb.png" />
+        <img
+          src="https://coertvonk.com/wp-content/uploads/RGB-LED_bb.png" />
       </CardMedia>
       <CardText>
         Shows how an external web site can change i/o values on your Arduino. <a href="https://coertvonk.com/technology/embedded/arduino-webserver-using-jquerymobile-and-jsfiddle-11803">See more</a>.
@@ -168,16 +168,16 @@ const CardExampleWithAvatar = () => (
     </Card>
 
     <Paper style={style} zDepth={3} />
-    
+
     <Card initiallyExpanded>
       <CardHeader
         title="Soldering equipment and projects for kids"
         actAsExpander={true}
-        showExpandableButton={true}/>
+        showExpandableButton={true} />
       />
       <CardMedia expandable={true}>
-        <img 
-          src= "https://coertvonk.com/wp-content/uploads/weller.png" />
+        <img
+          src="https://coertvonk.com/wp-content/uploads/weller.png" />
       </CardMedia>
       <CardText>
         <a href="https://coertvonk.com/technology/electronics/soldering-with-kids-15726">See more</a>.
